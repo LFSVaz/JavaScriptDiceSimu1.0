@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+    	<title>Dice Simulator</title>
+    	<meta charset="utf-8">
+        <link rel="stylesheet" href="css/style_dice_simu.css">
+        <script type="text/javascript" src="js/script_dice_simu.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pompiere&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pompiere&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body onload="dices()">
+
+        <div class="red_fabric">
+
+            <img src="img/fabric_texture.jpg">
+
+        </div>
+
+        <div class="dice_choose">
+
+    		<h1>Escolha o Tipo de Dado e a Quantidade:</h1>
+
+            <ul>
+
+                <li><img onclick="d4()" id="circle_d4" src="img/white_circle.png"><span class="d4_name">D4</span><img onclick="d4()" class="reset_d4" src="img/D4.png"><span class="d4_number"><button id="d4_minus"><</button><span id="d4_n"></span><button id="d4_plus">></button></span></li>
+
+                <li><img onclick="d6()" id="circle_d6" src="img/white_circle.png"><span class="d6_name">D6</span><img onclick="d6()" src="img/D6.png"><span class="d6_number"><button id="d6_minus"><</button><span id="d6_n"></span><button id="d6_plus">></button></li>
+
+                <li><img onclick="d8()" id="circle_d8" src="img/white_circle.png"><span class="d8_name">D8</span><img onclick="d8()" src="img/D8.png"><span class="d8_number"><button id="d8_minus"><</button><span id="d8_n"></span><button id="d8_plus">></button></li>
+
+                <li><img onclick="d10()" id="circle_d10" src="img/white_circle.png"><span class="d10_name">D10</span><img onclick="d10()" src="img/D10.png"><span class="d10_number"><button id="d10_minus"><</button><span id="d10_n"></span><button id="d10_plus">></button></li>
+
+                <li><img onclick="d12()" id="circle_d12" src="img/white_circle.png"><span class="d12_name">D12</span><img onclick="d12()" src="img/D12.png"><span class="d12_number"><button id="d12_minus"><</button><span id="d12_n"></span><button id="d12_plus">></button></li>
+
+                <li><img onclick="d20()" id="circle_d20" src="img/white_circle.png"><span class="d20_name">D20</span><img onclick="d20()" src="img/D20.png"><span class="d20_number"><button id="d20_minus"><</button><span id="d20_n"></span><button id="d20_plus">></button></li>
+
+    		</ul>
+
+    	</div>
+
+        <div class="t_dices">
+
+            <button onclick="result()" class="throw">Jogar</button> 
+
+        </div>
+
+        <div class=result_dices>
+
+            <h1>Resultado:</h1>
+            <span id="audio_dices"></span>
+
+            <span id="result_d4"></span>
+            <span id="result_d6"></span>
+            <span id="result_d8"></span>
+            <span id="result_d10"></span>
+            <span id="result_d12"></span>
+            <span id="result_d20"></span>
+                    
+        </div>
+
+        <div>
+
+            <button onclick="cleanDices()" class="clean">Limpar</button>
+
+        </div>
+
+        <iframe width="360" height="203" src="https://www.youtube.com/embed/5F5dgg1eeGE?si=O9M5PBIOW8pINl1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </body>
+
+</html>
